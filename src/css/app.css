@@ -3,7 +3,6 @@
 }
 
 .container {
-  /* display: block; */
   width: 530px;
   cursor: url(/src/image/minecraft.png), default;
 }
@@ -21,13 +20,10 @@
   margin: 2px 0 0 2px;
 }
 
-.img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: none;
-  object-position: center;
-}
+/* .img {
+  background-image: url(/src/image/goblin.png);
+  background-repeat: no-repeat;
+} */
 
 .score {
   display: block;

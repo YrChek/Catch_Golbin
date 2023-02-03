@@ -1,4 +1,4 @@
-export default class Image {
+export default class Picture {
   constructor(image, gameСells) {
     this.image = image;
     this.gameСells = gameСells;
