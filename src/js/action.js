@@ -16,7 +16,7 @@ export default class Action {
   clickGameBlock(e) {
     if (this.blockingClicks) return;
     const el = e.target;
-    if (el.classList.contains(this.game.class)) {
+    if (el.classList.contains('img')) {
       this.game.delActionImage();
       this.panel.addedScore();
     } else {
@@ -24,8 +24,10 @@ export default class Action {
       const stop = this.panel.gameOver();
       if (stop) {
         this.game.delInterval();
+        this.game.cell.classList.remove('img');
         document.querySelector('.finish').style.display = 'block';
         this.blockingClicks = true;
+        this.gameBlock.style.cursor = 'default';
       }
     }
   }
@@ -33,6 +35,7 @@ export default class Action {
   startGame() {
     this.panel.button.hidden = true;
     this.blockingClicks = false;
+    this.gameBlock.style.cursor = '';
     this.panel.newScore();
     this.panel.newMisses();
     this.game.insertRandomCell();
