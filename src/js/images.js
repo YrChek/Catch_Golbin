@@ -1,8 +1,8 @@
 export default class Image {
-  constructor(imageName, gameСells) {
-    this.imageName = imageName;
+  constructor(image, gameСells) {
+    this.image = image;
     this.gameСells = gameСells;
-    this.class = this.imageName.slice(0, -4);
+    this.class = this.image.alt;
     this.addImage = this.addImage.bind(this);
     this.delImage = this.delImage.bind(this);
     this.insertRandomCell = this.insertRandomCell.bind(this);
@@ -11,8 +11,7 @@ export default class Image {
   }
 
   addImage(elment) {
-    const img = `<img class="${this.class}" src="/src/image/${this.imageName}" alt="picture goblin"></img>`;
-    elment.insertAdjacentHTML('afterbegin', img);
+    elment.append(this.image);
   }
 
   delImage(parentEl) {
