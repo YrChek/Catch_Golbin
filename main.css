@@ -1,0 +1,74 @@
+.field {
+  display: flex;
+}
+
+.container {
+  width: 530px;
+  cursor: url(e5839a572a41ba30def6.png), default;
+}
+
+.container_item {
+  display: flex;
+}
+
+.item_field {
+  display: block;
+  position: relative;
+  width: 130px;
+  height: 130px;
+  background-color: aqua;
+  margin: 2px 0 0 2px;
+}
+
+.img {
+  background-image: url(2dbd01ce16c0fa83cb67.png);
+  background-repeat: no-repeat;
+}
+
+.score {
+  display: block;
+  width: 100px;
+  height: 20px;
+  margin: 5px;
+  border: 2px solid black;
+}
+
+.misses {
+  display: block;
+  width: 100px;
+  height: 20px;
+  margin: 5px;
+  border: 2px solid black;
+}
+
+.button {
+  display: block;
+  margin: 5px;
+}
+
+.button-start {
+  width: 100px;
+  height: 50px;
+}
+
+.finish {
+  display: none;
+  position:absolute;
+  border: 2px solid black;
+  width: 525px;
+  height: 525px;
+  background-image: url(db3814b137dbc3206e4b.png);
+  background-size:cover;
+  top: 10px;
+}
+
+.cross {
+  position: relative;
+  font-size: 50px;
+  text-decoration: none;
+  color: black;
+  top: 30px;
+  right: -450px;
+  cursor: pointer;
+}
+
